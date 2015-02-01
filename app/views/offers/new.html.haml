@@ -1,0 +1,13 @@
+%h1 New Offer
+
+= form_for :offer, url: offers_path do |f|
+  %p
+    = f.label :title
+    = f.text_field :title
+
+  %p
+    = f.label :description
+    = f.text_area :description
+
+  %p
+    = f.submit
