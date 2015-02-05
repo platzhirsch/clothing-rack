@@ -1,0 +1,13 @@
+%table
+  %thead
+    %tr
+      %th Title
+      %th Description
+      %th{colspan: 2}
+  %tbody
+    - @offers.each do |offer|
+      %tr
+        %td= offer.title
+        %td= offer.description
+        %td= link_to 'Show', offer_path(offer)
+        %td= link_to 'Edit', edit_offer_path(offer)

@@ -4,4 +4,8 @@
 
 %p
   %strong Text:
-  = @offer.text
+  = @offer.description
+
+= link_to 'Back', offers_path
+= link_to 'Edit', edit_offer_path(@offer)
+

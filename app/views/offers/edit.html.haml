@@ -1,6 +1,6 @@
-%h1 New Offer
+%h1 Editing Offer
 
-= form_for :offer, url: offers_path do |f|
+= form_for :offer, url: offer_path(@offer), method: :patch do |f|
   - if @offer.errors.any?
     %div#error-explanation
       %h2
